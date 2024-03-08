@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+    <style>
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, select {
+            margin-bottom: 10px;
+        }
+        .button-container {
+            margin-top: 20px;
+        }
+        .button-container button {
+            margin-right: 10px;
+        }
+
+        .page-title {
+            color: #123a64; /* Blue color */
+            font-size: 36px; /* Larger font size */
+            text-align: center; /* Center-align text */
+            margin-bottom: 20px; /* Add spacing at the bottom */
+            background-color: #e9ecef; /* Light gray background color */
+            padding: 10px; /* Add padding */
+        }
+
+        /* Subheadings */
+        .subheading {
+            color: #000200; /* Green color */
+            font-size: 24px; /* Medium font size */
+            margin-bottom: 10px; /* Add spacing at the bottom */
+            background-color: #b8cfbe; /* Light green background color */
+            padding: 5px; /* Add padding */
+        }
+        body {
+            background-color: #cad2db; /* Light gray background color */
+        }
+    </style>
+    
+</head>
+<body>
+
+    <h1 class="page-title">Welcome to Student Registration System</h1>
+    <section>
+        <h2 class="subheading">About Us</h2>
+        <p>Welcome to our Student Registration System. We aim to streamline the process of registering new students by providing a user-friendly and efficient platform. Our system ensures that all necessary information about students is collected accurately.</p>
+    </section>
+
+    <section>
+        <h2 class="subheading">How It Works</h2>
+        <p>Our Student Registration System allows new students to easily register by providing their personal information such as name, date of birth, gender, address, telephone, email address, and the course they wish to enroll in. Once registered, the information is securely stored in our database for future reference.</p>
+    </section>
+
+    <h2>Student Registration Form</h2>
+    <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="">Select</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" required></textarea>
+
+        <label for="telephone">Telephone:</label>
+        <input type="tel" id="telephone" name="telephone" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="course">Course:</label>
+        <input type="text" id="course" name="course" required>
+
+        <div class="button-container">
+            <button type="submit">Register</button>
+            <button type="button" onclick="cancelRegistration()">Cancel</button>
+        </div>
+    </form>
+
+        <script>
+            function cancelRegistration() {
+                alert("Registration canceled!");
+                }
+        </script>
+
+</body>
+</html>
